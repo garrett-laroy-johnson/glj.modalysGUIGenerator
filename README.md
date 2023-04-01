@@ -7,7 +7,7 @@ This is a quick & dirty JS scriptsto generate GUI control panel for Modalys inst
 - put `glj.mdlysCtrlGen.js` in the same folder as your patch or in Max's search path.
 - make a new `js` object with single argument, `glj.mdlysCtrlGen.js`. 
 - route `ctrllist` data from rightmost outlet of `modalys~` into a `prepend createModalysController` object. Connect prepend to `modalys~`
-- click `modalys~` and set *script name* to `modalys`
+- click `modalys~`, open the inspector, and set *script name* to `modalys`
 - (see example patch for barebones workflow)
 - you can send a `deleteObjects` message to clear out the interface (note: atm, after saving, closing, and opening the patch, this will not work and you'll need to delete manually). 
 
